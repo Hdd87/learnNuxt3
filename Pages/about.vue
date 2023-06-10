@@ -1,16 +1,23 @@
 <template>
- <p>
-    this is a sentence from the about.vue component inside pages directory <br />
+    <header>
+        <nav>
+            <ul>
+                <li><NuxtLink to="/">Home</NuxtLink></li>
+            </ul>
+        </nav>
+    </header>
+    <h2>
+        About page!
+    </h2>
 
-    but I can still see the counter, and toggle button :(   <br />
+    <!-- use the navigateTo() method -->
 
-    and the development must be restart to see any new changes in dev mode <br />
-
-    http://localhost:3000/about to see this page <br />
-
-    but if change the app.vue file's name to something else and restart dev  <br />
-
-    I can only see the pages inside the pages directory
-</p>
+    <button @click="moveTo">Home</button>
 
 </template>
+
+<script setup>
+    function moveTo(){
+        navigateTo("/")
+    }
+</script>
