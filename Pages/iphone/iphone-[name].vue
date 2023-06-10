@@ -15,4 +15,10 @@ const name = computed(() => {
     return route.params.name.replaceAll("-", " ") ;
 });
 
+// head management 
+
+useHead({
+    title: `Nuxt3 - iphone ${route.params.name}`,
+})
+
 </script>
