@@ -4,20 +4,19 @@
 
 <template>
     <header>
-        <nav class="bg-purple-400 text-white">
-            <ul>
-                <li><NuxtLink to="/">Home</NuxtLink></li>
-                <li><NuxtLink to="/about">About</NuxtLink></li>
-                <li><NuxtLink to="/profile">Profile</NuxtLink></li>
-                <li><NuxtLink to="/iphone-[name]">Iphone</NuxtLink></li>
-            </ul>
+        <nav class="flex  bg-purple-400 text-white shadow-lg text-lg justify-between px-4">
+            <NuxtLink to="/">Home</NuxtLink>
+            <NuxtLink to="/about">About</NuxtLink>
+            <NuxtLink to="/iphone">Iphones</NuxtLink>
+            <NuxtLink to="/profile">Profile</NuxtLink>
+            
         </nav>
     </header> 
 
     <!-- use slot to add the content of the page -->
     <slot></slot>
 
-    <div class="bg-blue-300 text-white space-x-4">
+    <div class="bg-blue-300 text-white justify-between">
         <button @click="home">Home</button>
         <button @click="about">About</button>
         <button @click="profile">Profile</button>
