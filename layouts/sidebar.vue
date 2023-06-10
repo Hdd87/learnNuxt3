@@ -1,9 +1,9 @@
 <!-- this is another layout to be used inside the profile page  -->
 
 <template>
-    <main class="container">
+    <main class="flex bg-teal-300">
 
-        <article class="sidebar">
+        <article class="flex-col bg-slate-400 text-white font-bold">
             <NuxtLink to="/"><p> Home </p></NuxtLink>
             <NuxtLink to="/about"><p> About </p></NuxtLink>    
         </article>
