@@ -6,16 +6,18 @@
     <header>
         <nav>
             <ul>
-                <li><NuxtLink to="/about">About</NuxtLink></li>
                 <li><NuxtLink to="/">Home</NuxtLink></li>
+                <li><NuxtLink to="/about">About</NuxtLink></li>
+                <li><NuxtLink to="/profile">Profile</NuxtLink></li>
             </ul>
         </nav>
     </header> 
 
     <slot></slot>
 
-    <button @click="about">About</button>
     <button @click="home">Home</button>
+    <button @click="about">About</button>
+    <button @click="profile">Profile</button>
 
 </template>
 
@@ -26,5 +28,8 @@
     }
     function home(){
         navigateTo("/")
+    }
+    function profile(){
+        navigateTo("/profile")
     }
 </script>
