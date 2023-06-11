@@ -16,10 +16,23 @@
     <!-- use slot to add the content of the page -->
     <slot></slot>
 
-    
+    <div class="bg-blue-300 text-white justify-between">
+        <button @click="home">Home</button>
+        <button @click="about">About</button>
+        <button @click="profile">Profile</button>
+    </div>
 </template>
 
 <script setup>
-
+//  use the navigateTo() method 
+    function about(){
+        navigateTo("/about")
+    }
+    function home(){
+        navigateTo("/")
+    }
+    function profile(){
+        navigateTo("/profile")
+    }
 
 </script>
