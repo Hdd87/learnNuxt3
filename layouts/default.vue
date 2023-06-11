@@ -1,22 +1,10 @@
 <!-- default layout for this project -->
 
-<!-- add the nav bars and the buttons here  -->
-
 <template>
-    <header>
-        <nav class="flex  bg-purple-400 text-white shadow-lg text-lg justify-between px-4">
-            <NuxtLink to="/">Home</NuxtLink>
-            <NuxtLink to="/about">About</NuxtLink>
-            <NuxtLink to="/iphone">Iphones</NuxtLink>
-            <NuxtLink to="/profile">Profile</NuxtLink>
-            
-        </nav>
-    </header> 
-
-    <!-- use slot to add the content of the page -->
+    <Navbar />
+  <!-- use slot to add the content of the page -->
     <slot></slot>
-
-    
+   
 </template>
 
 <script setup>
